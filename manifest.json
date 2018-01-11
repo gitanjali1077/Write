@@ -1,0 +1,15 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Save Details to file",
+  "description": "Saves Navigation details.",
+  "version": "2",
+  "permissions": ["contextMenus", "downloads", "storage", "notifications", "tabs","activeTab",
+"browsingData","http://*/*",
+      "https://*/*","downloads.shelf"],
+  "background": {"scripts": ["backgroundScript.js"], "persistent": false},
+  "manifest_version": 2,
+  "icons": {
+    "64": "icon.png"
+  }
+}
